@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Przystępny przewodnik o depresji, samoocenie, codziennym wsparciu i szukaniu pomocy.">
+    <title>Zdrowie psychiczne — depresja i samoocena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+        <header class="topbar" aria-labelledby="topbar-title">
+            <div class="topbar-copy">
+                <p class="topbar-kicker"><span aria-hidden="true"></span> PRZESTRZEŃ NA ZROZUMIENIE</p>
+                <h1 class="topbar-title archivo-black-regular" id="topbar-title">Twoje emocje<br>mają znaczenie.</h1>
+                <p class="topbar-description">O depresji, samoocenie i szukaniu wsparcia — spokojnie, krok po kroku.</p>
+                <a class="topbar-link" href="#depression">Odkryj przewodnik <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="topbar-media">
+                <video class="topbar-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+                    <source src="latajacy_piesek_v2.webm" type="video/webm">
+                </video>
+            </div>
+        </header>
+
+        <div class="layout">
+            <aside class="side left">
+                <form class="side-form">
+                    <label for="problem-select">Mam problem z</label>
+                    <select id="problem-select" name="problem" required>
+                        <option value="" selected disabled>Wybierz temat</option>
+                        <option value="school">szkołą</option>
+                        <option value="relationships">relacjami z innymi</option>
+                        <option value="family">rodziną</option>
+                        <option value="social-pressure">opinią i presją społeczną</option>
+                    </select>
+                    <button type="submit">Pokaż sekcję</button>
+                    <output class="selection-result" aria-live="polite" hidden></output>
+                </form>
+            </aside>
+
+            <main class="content" id="main-content">
+                <header class="intro" aria-labelledby="page-title">
+                    <p class="eyebrow">Przewodnik po zdrowiu psychicznym</p>
+                    <h1 class="archivo-black-regular" id="page-title">Jak się dzisiaj czujesz?</h1>
+                    <p class="intro-copy">Wiedza, zrozumienie i małe kroki mogą pomóc. Wybierz temat albo przewiń,
+                        aby poznać dwa ważne zagadnienia: depresję i samoocenę.</p>
+                </header>
+
+                <section class="guide-section" id="depression" aria-labelledby="depression-title">
+                    <header class="chapter-heading">
+                        <p class="eyebrow">01 / ZROZUMIEĆ I ZADBAĆ O SIEBIE</p>
+                        <h2 class="archivo-black-regular" id="depression-title">Depresja</h2>
+                        <p>Najważniejsze informacje o objawach, przyczynach, leczeniu i wspieraniu bliskich.</p>
+                    </header>
+
+                    <div class="article-grid">
+                        <article class="panel feature-panel span-6" id="what-is-depression">
+                            <span class="section-number">01.1 / PODSTAWY</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🧠</span> Czym jest depresja?</h3>
+                            <p>Depresja to zaburzenie psychiczne, które wpływa na samopoczucie, sposób myślenia,
+                                zachowanie oraz codzienne funkcjonowanie człowieka. Nie jest zwykłym smutkiem ani
+                                chwilowym gorszym nastrojem. <strong>To poważny problem zdrowotny, który może dotknąć
+                                każdego, niezależnie od wieku, płci czy sytuacji życiowej.</strong></p>
+                            <p>Osoba zmagająca się z depresją często odczuwa długotrwały smutek, pustkę, brak energii
+                                lub utratę zainteresowania rzeczami, które wcześniej sprawiały jej przyjemność.
+                                Nawet proste, codzienne czynności mogą stać się dla niej trudne. Depresja nie jest
+                                <strong>oznaką słabości ani czymś, co można po prostu pokonać siłą woli.</strong></p>
+                        </article>
+
+                        <article class="panel feature-panel span-6" id="symptoms">
+                            <span class="section-number">01.2 / ROZPOZNAWANIE</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🔎</span> Jakie są objawy depresji?</h3>
+                            <p>Depresja może objawiać się na różne sposoby. Nie każda osoba doświadcza tych samych
+                                symptomów, a ich nasilenie może być różne.</p>
+                            <ul class="readable-list">
+                                <li><strong>Obniżony nastrój</strong> — częsty smutek, przygnębienie lub poczucie pustki.</li>
+                                <li><strong>Utrata zainteresowań</strong> — rzeczy, które wcześniej sprawiały radość,
+                                    przestają cieszyć.</li>
+                                <li><strong>Brak energii</strong> — ciągłe zmęczenie i trudności z codziennymi
+                                    obowiązkami.</li>
+                                <li><strong>Problemy ze snem</strong> — bezsenność albo nadmierna senność.</li>
+                                <li><strong>Zmiany apetytu</strong> — jedzenie znacznie mniej lub więcej niż wcześniej.</li>
+                                <li><strong>Trudności z koncentracją</strong> — problemy z nauką, decyzjami
+                                    i zapamiętywaniem.</li>
+                                <li><strong>Niska samoocena</strong> — nadmierne obwinianie się i poczucie
+                                    bycia niewystarczająco dobrym.</li>
+                                <li><strong>Wycofanie społeczne</strong> — unikanie spotkań i ograniczanie kontaktów.</li>
+                            </ul>
+                            <p>Mogą też występować dolegliwości fizyczne, takie jak bóle głowy, bóle brzucha czy
+                                napięcie w ciele. Jeśli objawy utrzymują się przez większość dni przez co najmniej
+                                dwa tygodnie i utrudniają codzienne życie, warto skonsultować się ze specjalistą.
+                                <strong>Nie trzeba jednak czekać dwóch tygodni, aby poprosić o pomoc.</strong></p>
+                        </article>
+
+                        <article class="panel summary-panel span-4" id="causes">
+                            <span class="section-number">01.3 / CZYNNIKI</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🌱</span> Skąd bierze się depresja?</h3>
+                            <p>Nie ma jednej przyczyny depresji. Najczęściej rozwija się pod wpływem kilku wzajemnie
+                                oddziałujących czynników:</p>
+                            <ul class="readable-list">
+                                <li><strong>Biologicznych</strong> — predyspozycji genetycznych, funkcjonowania
+                                    organizmu i układu nerwowego.</li>
+                                <li><strong>Psychologicznych</strong> — długotrwałego stresu, niskiej samooceny,
+                                    trudności z emocjami lub bolesnych doświadczeń.</li>
+                                <li><strong>Społecznych</strong> — samotności, konfliktów rodzinnych, przemocy,
+                                    problemów w szkole, odrzucenia lub utraty bliskiej osoby.</li>
+                            </ul>
+                            <p><strong>Depresja może pojawić się również wtedy, gdy pozornie wszystko w życiu układa
+                                się dobrze.</strong> Nie zawsze istnieje jedna konkretna przyczyna.</p>
+                        </article>
+
+                        <article class="panel summary-panel span-4" id="young-people">
+                            <span class="section-number">01.4 / DORASTANIE</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🎓</span> Depresja u młodzieży</h3>
+                            <p>U młodych osób objawy mogą obejmować drażliwość, wybuchy złości, izolowanie się,
+                                pogorszenie wyników w nauce, brak motywacji lub poczucie niezrozumienia. Depresji
+                                <strong>nie należy utożsamiać ze zwykłymi wahaniami nastroju.</strong></p>
+                            <p>Czasami młoda osoba nie potrafi powiedzieć wprost, co się dzieje, i może twierdzić,
+                                że wszystko jest w porządku, mimo trudnych emocji. Ważne jest uważne słuchanie,
+                                unikanie oceniania i traktowanie jej problemów poważnie.</p>
+                        </article>
+
+                        <article class="panel summary-panel span-4" id="treatment">
+                            <span class="section-number">01.5 / MOŻLIWOŚCI</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🩺</span> Jak leczy się depresję?</h3>
+                            <ul class="readable-list">
+                                <li><strong>Psychoterapia</strong> pomaga zrozumieć emocje, rozpoznawać trudne
+                                    schematy myślenia i rozwijać sposoby radzenia sobie.</li>
+                                <li><strong>Leczenie farmakologiczne</strong> — lekarz może zalecić leki, jeśli są
+                                    potrzebne; dobór zależy od sytuacji pacjenta.</li>
+                                <li><strong>Wsparcie bliskich</strong> i poczucie, że nie jest się samemu.</li>
+                                <li><strong>Codzienna troska o siebie</strong> — sen, odżywianie, ruch dostosowany
+                                    do możliwości i stopniowe utrzymywanie kontaktów.</li>
+                            </ul>
+                            <p><strong>Nie istnieje jedna metoda, która działa tak samo na wszystkich.</strong>
+                                Leczenie powinno być dostosowane do potrzeb konkretnej osoby.</p>
+                        </article>
+
+                        <article class="panel feature-panel span-6" id="supporting-someone">
+                            <span class="section-number">01.6 / BYĆ OBOK</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🤝</span> Jak można pomóc osobie z depresją?</h3>
+                            <p>Wsparcie wymaga przede wszystkim cierpliwości, empatii i zrozumienia. Warto:</p>
+                            <ul class="readable-list">
+                                <li>wysłuchać bez oceniania i pokazać, że uczucia są ważne;</li>
+                                <li>zapytać, jakiego wsparcia dana osoba potrzebuje;</li>
+                                <li>zachęcić do rozmowy ze specjalistą;</li>
+                                <li>utrzymywać kontakt, nawet gdy osoba czasem się wycofuje;</li>
+                                <li>nie wywierać presji, by natychmiast poczuła się lepiej.</li>
+                            </ul>
+                            <p>Unikaj stwierdzeń „weź się w garść”, „inni mają gorzej” czy „wystarczy myśleć
+                                pozytywnie”. <strong>Lepiej powiedzieć:</strong> „Nie musisz radzić sobie z tym samodzielnie”,
+                                „Jestem tutaj, jeśli chcesz porozmawiać” albo „Mogę pomóc Ci znaleźć odpowiednie
+                                wsparcie”.</p>
+                        </article>
+
+                        <article class="panel summary-panel span-6" id="depression-facts">
+                            <span class="section-number">01.7 / WARTO PAMIĘTAĆ</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">📌</span> Najważniejsze fakty</h3>
+                            <ul class="readable-list two-column-list">
+                                <li>Depresja jest chorobą, a nie oznaką słabości charakteru.</li>
+                                <li>Może dotknąć osoby w każdym wieku.</li>
+                                <li>Nie zawsze jest widoczna dla otoczenia.</li>
+                                <li>Nie jest tym samym co chwilowy smutek lub gorszy dzień.</li>
+                                <li>Może wpływać na emocje, myślenie, relacje, sen i obowiązki.</li>
+                                <li>Nie zawsze ma jedną wyraźną przyczynę.</li>
+                                <li>Można ją skutecznie leczyć, choć powrót do zdrowia wymaga czasu.</li>
+                                <li>Rozmowa ze specjalistą i wsparcie bliskich mają znaczenie.</li>
+                                <li>Osoba z depresją nie powinna być obwiniana za swój stan.</li>
+                                <li><strong>Proszenie o pomoc jest oznaką troski o siebie, a nie słabości.</strong></li>
+                            </ul>
+                        </article>
+
+                        <article class="panel content-panel span-6" id="help-seeking">
+                            <span class="section-number">01.8 / SZUKAĆ WSPARCIA</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🆘</span> Gdzie szukać pomocy?</h3>
+                            <p>Możesz porozmawiać z psychologiem, psychiatrą, lekarzem rodzinnym lub innym zaufanym
+                                dorosłym. Nastolatkom może pomóc także psycholog szkolny.</p>
+                            <p>Dzieci i młodzież w Polsce mogą bezpłatnie i całodobowo zadzwonić pod numer
+                                <a href="tel:116111"><strong>116 111</strong></a>. W przypadku bezpośredniego
+                                zagrożenia życia zadzwoń pod <a href="tel:112"><strong>112</strong></a>.</p>
+                            <p>Jeśli podejrzewasz u siebie depresję, możesz też porozmawiać z innym zaufanym
+                                dorosłym. Nie musisz samodzielnie wiedzieć, jakiej pomocy potrzebujesz — możesz
+                                poprosić o pomoc w znalezieniu specjalisty.</p>
+                        </article>
+
+                        <article class="panel content-panel span-6" id="depression-summary">
+                            <span class="section-number">01.9 / NA KONIEC</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🌤️</span> Depresja nie odbiera nadziei</h3>
+                            <p>Depresja może znacząco wpływać na życie, ale nie oznacza, że nie ma nadziei na poprawę.
+                                Rozpoznawanie trudności, przełamywanie stereotypów i rozmowa ze specjalistą mogą być
+                                ważnymi krokami.</p>
+                            <p><strong>Każdy zasługuje na wsparcie.</strong> Życzliwość, cierpliwość i szczera rozmowa mogą pomóc
+                                rozpocząć szukanie właściwej pomocy. Czasami szczera rozmowa i pomoc w znalezieniu
+                                specjalisty są pierwszym krokiem do poprawy samopoczucia.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="guide-section self-esteem-section" id="self-esteem" aria-labelledby="self-esteem-title">
+                    <header class="chapter-heading">
+                        <p class="eyebrow">02 / POZNAĆ SWOJĄ WARTOŚĆ</p>
+                        <h2 class="archivo-black-regular" id="self-esteem-title">Samoocena</h2>
+                        <p>Jak postrzeganie siebie wpływa na emocje, relacje i codzienne decyzje — oraz jak budować
+                            życzliwszy stosunek do siebie.</p>
+                    </header>
+
+                    <div class="article-grid">
+                        <article class="panel feature-panel span-6" id="self-esteem-basics">
+                            <span class="section-number">02.1 / PODSTAWY</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🪞</span> Czym jest samoocena?</h3>
+                            <p>Samoocena to sposób, w jaki postrzegamy i oceniamy samych siebie. Obejmuje przekonania
+                                o własnej wartości, umiejętnościach, wyglądzie, charakterze oraz o tym, czy czujemy
+                                się ważni i akceptowani. Wpływa na myśli, emocje, relacje z ludźmi i podejmowane
+                                decyzje.</p>
+                            <p><strong>Samoocena nie oznacza, że jesteśmy idealni i nie popełniamy błędów.</strong>
+                                To raczej
+                                umiejętność akceptowania siebie, dostrzegania mocnych stron oraz pracy nad
+                                trudnościami bez ciągłego poniżania siebie. Każdy ma samoocenę, która może zmieniać
+                                się pod wpływem doświadczeń, relacji, sukcesów, porażek i opinii innych.</p>
+                        </article>
+
+                        <article class="panel feature-panel span-6" id="self-esteem-types">
+                            <span class="section-number">02.2 / RÓŻNE DOŚWIADCZENIA</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">⚖️</span> Jakie są rodzaje samooceny?</h3>
+                            <p><strong>Wysoka i zdrowa samoocena</strong> oznacza dostrzeganie swojej wartości,
+                                wiarę we własne możliwości i akceptowanie niedoskonałości — bez konieczności bycia
+                                najlepszym lub ciągłego zdobywania uznania.</p>
+                            <p><strong>Niska samoocena</strong> wiąże się z częstym krytykowaniem siebie, wątpieniem
+                                we własne możliwości, lękiem przed oceną i trudnością z przyjmowaniem komplementów.</p>
+                            <p><strong>Niestabilna samoocena</strong> mocno zależy od wydarzeń i opinii innych:
+                                pochwała może przynieść radość, a krytyka lub niepowodzenie gwałtownie obniżyć wiarę
+                                w siebie. Zdrowa samoocena nie oznacza ciągłego zadowolenia z siebie.</p>
+                        </article>
+
+                        <article class="panel summary-panel span-6" id="self-esteem-influences">
+                            <span class="section-number">02.3 / CO MA ZNACZENIE</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🌿</span> Co wpływa na samoocenę?</h3>
+                            <ul class="readable-list">
+                                <li><strong>Rodzina i wychowanie:</strong> wsparcie, szacunek i akceptacja pomagają
+                                    budować poczucie wartości; ciągła krytyka, poniżanie i nadmierne wymagania mogą je
+                                    osłabiać.</li>
+                                <li><strong>Rówieśnicy:</strong> przyjaźnie i poczucie przynależności mogą wzmacniać
+                                    pewność siebie, a odrzucenie, wyśmiewanie i przemoc mogą negatywnie wpływać na
+                                    obraz siebie.</li>
+                                <li><strong>Doświadczenia:</strong> sukcesy pomagają dostrzegać możliwości, a porażki
+                                    mogą uczyć — trudność pojawia się, gdy własna wartość zależy wyłącznie od wyników.</li>
+                                <li><strong>Media społecznościowe:</strong> wyidealizowane zdjęcia i porównywanie
+                                    swojego życia z innymi mogą powodować niezadowolenie.</li>
+                                <li><strong>Własne myśli:</strong> negatywne interpretowanie każdego błędu może
+                                    utrwalać niekorzystny obraz siebie.</li>
+                            </ul>
+                        </article>
+
+                        <article class="panel summary-panel span-6" id="low-self-esteem">
+                            <span class="section-number">02.4 / ZAUWAŻYĆ WPŁYW</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🧩</span> Jak niska samoocena wpływa na człowieka?</h3>
+                            <p><strong>Może nasilać niepewność, stres i lęk przed oceną.</strong> Czasem sprawia, że rezygnujemy
+                                z nowych wyzwań, mamy trudności z wyrażaniem zdania, stawianiem granic lub
+                                przyjmowaniem komplementów.</p>
+                            <p>Może też utrudniać naukę, pracę i rozwijanie zainteresowań. Nieśmiałość w konkretnej
+                                sytuacji sama w sobie nie oznacza niskiej samooceny. Ludzie różnią się
+                                temperamentem, a niepewność w określonych sytuacjach nie musi oznaczać
+                                negatywnego stosunku do siebie.</p>
+                        </article>
+
+                        <article class="panel content-panel span-8" id="building-self-esteem">
+                            <span class="section-number">02.5 / MAŁE KROKI</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🪴</span> Jak budować zdrową samoocenę?</h3>
+                            <p>Praca nad samooceną wymaga czasu i cierpliwości. Spróbuj zacząć od małych kroków:</p>
+                            <ol class="readable-list steps-list">
+                                <li><strong>Zwracaj uwagę na to, jak do siebie mówisz.</strong> Zamiast „do niczego się
+                                    nie nadaję” spróbuj: „Tym razem mi nie wyszło, ale mogę się czegoś nauczyć”.
+                                    <strong>Jedno niepowodzenie nie określa całej Twojej wartości.</strong></li>
+                                <li><strong>Dostrzegaj swoje mocne strony.</strong> Mogą to być życzliwość, humor,
+                                    kreatywność, cierpliwość lub umiejętność słuchania.</li>
+                                <li><strong>Nie porównuj się nieustannie.</strong> Każdy ma własne tempo, doświadczenia
+                                    i możliwości. Zauważaj własne postępy.</li>
+                                <li><strong>Naucz się akceptować błędy.</strong> Są naturalną częścią życia i mogą
+                                    być okazją do zdobywania doświadczenia.</li>
+                                <li><strong>Stawiaj realistyczne cele.</strong> Zaczynaj od małych kroków i doceniaj
+                                    wysiłek, a nie tylko końcowy rezultat.</li>
+                                <li><strong>Otaczaj się wspierającymi ludźmi.</strong> Warto ograniczać wpływ osób,
+                                    które regularnie poniżają, wyśmiewają lub manipulują.</li>
+                                <li><strong>Naucz się stawiać granice.</strong> Masz prawo wyrażać zdanie, odmawiać
+                                    i mówić o swoich potrzebach. Twoje uczucia również są ważne.</li>
+                            </ol>
+                        </article>
+
+                        <article class="panel summary-panel span-4" id="social-media">
+                            <span class="section-number">02.6 / ONLINE I OFFLINE</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">📱</span> Samoocena a media społecznościowe</h3>
+                            <p>W mediach społecznościowych widzimy zdjęcia, osiągnięcia, podróże i wybrane momenty
+                                z życia innych. Internet nie pokazuje jednak pełnego obrazu — publikowane treści
+                                często pomijają codzienne trudności i niepowodzenia.</p>
+                            <p>Jeśli media powodują częste niezadowolenie z siebie, spróbuj zrobić przerwę, ograniczyć
+                                czas online lub przestać obserwować profile wywołujące presję.
+                                <strong>Twoja wartość nie zależy od polubień, komentarzy ani obserwujących.</strong></p>
+                        </article>
+
+                        <article class="panel summary-panel span-6" id="self-esteem-youth">
+                            <span class="section-number">02.7 / OKRES DORASTANIA</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🌱</span> Dlaczego samoocena jest wtedy szczególnie ważna?</h3>
+                            <p>Dorastanie to czas wielu zmian i kształtowania tożsamości. Opinie rówieśników,
+                                krytyka, odrzucenie i presja dopasowania się mogą mocno wpływać na obraz siebie.</p>
+                            <p><strong>Młodzi ludzie nie muszą spełniać wszystkich oczekiwań otoczenia.</strong>
+                                Ważne jest, by uczyli się rozpoznawać emocje, akceptować swoją
+                                indywidualność i rozumieć, że nie muszą spełniać wszystkich oczekiwań otoczenia.
+                                Samoocena nie jest niezmienna — wspierające relacje, nowe doświadczenia i praca nad
+                                przekonaniami mogą pomóc stopniowo zmienić sposób postrzegania siebie.</p>
+                        </article>
+
+                        <article class="panel summary-panel span-6" id="self-esteem-help">
+                            <span class="section-number">02.8 / KIEDY POROZMAWIAĆ</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🗣️</span> Kiedy warto szukać pomocy?</h3>
+                            <p>Jeśli negatywne myśli o sobie trwają długo, powodują silny stres, utrudniają relacje
+                                albo sprawiają, że rezygnujesz z ważnych rzeczy, warto porozmawiać z psychologiem
+                                lub innym zaufanym specjalistą. Pomoc może ułatwić rozpoznanie źródeł trudności,
+                                zmianę niekorzystnych przekonań i rozwijanie bardziej życzliwego stosunku do siebie.
+                                Nie trzeba czekać, aż problem stanie się bardzo poważny.</p>
+                        </article>
+
+                        <article class="panel content-panel span-12" id="self-esteem-summary">
+                            <span class="section-number">02.9 / NA KONIEC</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">✨</span> Nie musisz być idealny, żeby być wartościową osobą</h3>
+                            <p>Samoocena wpływa na to, jak myślimy o sobie, radzimy sobie z trudnościami i budujemy
+                                relacje. Zdrowa samoocena nie oznacza doskonałości, lecz świadomość własnej wartości
+                                mimo błędów, niepowodzeń czy opinii otoczenia.</p>
+                            <p><strong>Nie musisz być idealny, aby być wartościowym człowiekiem.</strong>
+                                Akceptowanie niedoskonałości, docenianie postępów i traktowanie siebie z życzliwością
+                                to proces, który wymaga czasu. Twoja wartość nie znika, gdy popełniasz błąd, masz
+                                <strong>gorszy dzień lub nie spełniasz czyichś oczekiwań.</strong> Akceptacja siebie może być ważnym
+                                krokiem w kierunku lepszego samopoczucia i zdrowszych relacji.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="guide-section" aria-labelledby="support-title">
+                    <header class="chapter-heading">
+                        <p class="eyebrow">03 / WSPARCIE W CODZIENNOŚCI</p>
+                        <h2 class="archivo-black-regular" id="support-title">Nie musisz być z tym samodzielnie</h2>
+                    </header>
+                    <div class="article-grid support-grid">
+                        <article class="panel summary-panel span-3" id="school">
+                            <span class="section-number">SZKOŁA</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🎒</span> Gdy trudno w szkole</h3>
+                            <p>Spróbuj porozmawiać z zaufaną osobą dorosłą, wychowawcą lub psychologiem szkolnym.
+                                Możesz poprosić o spokojne miejsce i powiedzieć, czego potrzebujesz.</p>
+                        </article>
+                        <article class="panel summary-panel span-3" id="relationships">
+                            <span class="section-number">RELACJE</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🫂</span> Gdy trudno z innymi</h3>
+                            <p>Nie musisz opowiadać wszystkiego naraz. Możesz zacząć od: „Ostatnio jest mi ciężko.
+                                Czy możesz mnie wysłuchać?”</p>
+                        </article>
+                        <article class="panel summary-panel span-3" id="family">
+                            <span class="section-number">BLISCY</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🏠</span> Gdy trudno w domu</h3>
+                            <p>Jeśli trudno porozmawiać z rodziną, poszukaj innej zaufanej osoby, nauczyciela,
+                                psychologa lub lekarza. Masz prawo prosić o pomoc.</p>
+                        </article>
+                        <article class="panel summary-panel span-3" id="social-pressure">
+                            <span class="section-number">PRESJA</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🧭</span> Gdy przytłacza ocena</h3>
+                            <p>Twoje samopoczucie jest ważne, nawet jeśli inni nie widzą, z czym się zmagasz.
+                                Nie musisz spełniać wszystkich oczekiwań otoczenia.</p>
+                        </article>
+                        <article class="panel content-panel urgent-panel span-6" id="urgent-help">
+                            <span class="section-number">PILNA POMOC</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">🚨</span> Gdy ktoś jest w bezpośrednim niebezpieczeństwie</h3>
+                            <p>Zadzwoń pod numer alarmowy <a href="tel:112">112</a> lub jedź na najbliższy SOR.
+                                Jeśli możesz, powiedz zaufanej osobie dorosłej i nie zostawaj z tym samodzielnie.</p>
+                            <p>Dzieci i młodzież mogą też bezpłatnie i całodobowo zadzwonić pod numer
+                                <a href="tel:116111">116 111</a>.</p>
+                        </article>
+                        <article class="panel content-panel span-6" id="how-help">
+                            <span class="section-number">PIERWSZY KROK</span>
+                            <h3 class="archivo-black-regular"><span class="heading-emoji" aria-hidden="true">💬</span> Możesz zacząć od rozmowy</h3>
+                            <p>Nie musisz mieć gotowych słów ani wiedzieć dokładnie, co zrobić. Powiedz zaufanej
+                                osobie, że jest Ci trudno i chcesz poszukać wsparcia. Ta strona ma charakter
+                                informacyjny i nie zastępuje diagnozy ani konsultacji ze specjalistą.</p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="side right">
+                <form class="side-form">
+                    <label for="help-select">Przejdź do tematu</label>
+                    <select id="help-select" name="help" required>
+                        <option value="" selected disabled>Wybierz temat</option>
+                        <option value="what-is-depression">depresji</option>
+                        <option value="symptoms">objawach</option>
+                        <option value="causes">przyczynach depresji</option>
+                        <option value="young-people">depresji u młodzieży</option>
+                        <option value="treatment">leczeniu</option>
+                        <option value="supporting-someone">wspieraniu bliskiej osoby</option>
+                        <option value="depression-facts">najważniejszych faktach</option>
+                        <option value="help-seeking">szukaniu pomocy</option>
+                        <option value="self-esteem">samoocenie</option>
+                        <option value="self-esteem-types">rodzajach samooceny</option>
+                        <option value="self-esteem-influences">tym, co wpływa na samoocenę</option>
+                        <option value="low-self-esteem">niskiej samoocenie</option>
+                        <option value="building-self-esteem">budowaniu samooceny</option>
+                        <option value="social-media">samoocenie a mediach</option>
+                        <option value="self-esteem-youth">samoocenie u młodzieży</option>
+                        <option value="self-esteem-help">pomocy przy trudnościach</option>
+                        <option value="urgent-help">pilnej pomocy</option>
+                    </select>
+                    <button type="submit">Pokaż sekcję</button>
+                    <output class="selection-result" aria-live="polite" hidden></output>
+                </form>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <p>Nie musisz przechodzić przez trudny czas w pojedynkę.</p>
+            <a href="https://www.centrum-ja.com.pl/kryzys-samobojczy-jak-przez-niego-przejsc-i-gdzie-szukac-wsparcia/" target="_blank" rel="noopener noreferrer">Zobacz, jak zacząć szukać wsparcia</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
